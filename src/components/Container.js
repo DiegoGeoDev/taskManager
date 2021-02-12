@@ -2,7 +2,7 @@ function Container({ children }) {
 	const containerStyle = {
 		backgroundColor: '#2e2d2e',
 		width: '100vw',
-		height: 'calc(100% - 140px)',
+		height: '100vh',
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',

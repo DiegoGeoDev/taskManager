@@ -1,9 +1,12 @@
+import { useContext } from 'react';
+import { TasksContext } from '../contexts/Tasks';
+
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Task from './Task';
 
-function Tasks({ tasks }) {
+function Tasks() {
 	const StyledUl = styled.ul`
 		width: 90vw;
 		padding: 8px;
@@ -14,10 +17,12 @@ function Tasks({ tasks }) {
 		}
 	`;
 
+	const { tasks } = useContext(TasksContext);
+
 	const component = (
 		<StyledUl>
 			{tasks.map((task) => (
-				<Task key={task.id} text={task.text} date={task.date} />
+				<Task key={task.id} text={task.text} date={task.date} id={task.id} />
 			))}
 		</StyledUl>
 	);

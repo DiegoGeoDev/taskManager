@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+- 1 - Introdução
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- O que é ?
+- Estrutura Básica de Pastas
+- Arquivos Principais
 
-## Available Scripts
+  - App (estilo arquivo externo)
+  - index (Render root no html)
 
-In the project directory, you can run:
+- 2 - Header
 
-### `yarn start`
+- Estrutura Básica
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  - imports
+  - component (props)
+    - style (estilo básico)
+    - return (retorno deve ser único)
+  - defaultProps
+  - propTypes (TypeScript)
+  - export
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 3 - Container
 
-### `yarn test`
+- Revisão (Estrutura Básica)
+- Explicar children
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 4 - Button
 
-### `yarn build`
+- Revisão (Estrutura Básica)
+- Eventos (click - criar função no App - console)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 5 - Tasks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Revisão (Estrutura Básica)
+- Estilos com Styled Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - 5.1 - Task
 
-### `yarn eject`
+  - Ícones com React Icons
+  - Estilos com Styled Components + Estilo Básico
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  - 5.2 Tasks - Task
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - import do component Task
+  - Criar mock em App
+    - UseState (O que é ? Como usar ?)
+  - Renderização de Task em Tasks com map
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 6 - Task
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - Ícone Delete (mostrar forma de passar o evento de click de App até Task - console)
 
-## Learn More
+- 7 - Refatoração 1 (remover mock do App e criar context)
+  UseContext (O que é ? Como usar ?)
+  Colocar mock no Tasks context
+  Utilizar o Tasks context dentro do component Tasks
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 8 - Refatoração 2 (tornar o context um hook personalizado)

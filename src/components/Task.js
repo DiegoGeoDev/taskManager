@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { TiDelete } from 'react-icons/ti';
 
-function Task({ text, date }) {
+function Task({ text, date, id }) {
 	const StyledLi = styled.li`
 		padding: 8px;
 		list-style-type: none;
@@ -45,7 +45,7 @@ function Task({ text, date }) {
 				<h3>{text}</h3>
 				<p>{date}</p>
 			</span>
-			<TiDelete style={iconsStyle} />
+			<TiDelete style={iconsStyle} onClick={() => console.log(id)} />
 		</StyledLi>
 	);
 
@@ -55,6 +55,7 @@ function Task({ text, date }) {
 const propTypes = {
 	text: PropTypes.string.isRequired,
 	date: PropTypes.string.isRequired,
+	id: PropTypes.number.isRequired,
 };
 
 Task.propTypes = propTypes;
