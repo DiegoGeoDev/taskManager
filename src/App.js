@@ -1,9 +1,11 @@
+import Header from './components/Header/Header';
+
 import './App.css';
 
 function App() {
 	return (
 		<div className="App">
-			<h1>OI</h1>
+			<Header title={'Task Manager'} />
 		</div>
 	);
 }

@@ -1,0 +1,16 @@
+#header__title {
+	width: 100vw;
+	height: 140px;
+	font-size: 1.8em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__title_color {
+	color: #fff;
+}
+
+.header__title_bg {
+	background-color: #2e2d2e;
+}
