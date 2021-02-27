@@ -1,0 +1,29 @@
+:root {
+	--bg-button: #4842e9;
+	--text-color: #eee;
+	--bg-button-hover: rgb(38, 33, 175);
+	--text-color-hover: #ddd;
+}
+
+.button__task {
+	color: var(--text-color);
+	background-color: var(--bg-button);
+	width: 120px;
+	height: 60px;
+
+	margin-top: 16px;
+	padding: 8px;
+	border-radius: 4px;
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: background-color 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.button__task:hover {
+	color: var(--text-color-hover);
+	background-color: var(--bg-button-hover);
+}

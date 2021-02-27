@@ -1,14 +1,17 @@
 import Header from './components/Header/Header';
 import Container from './components/Container/Container';
+import Button from './components/Button/Button';
 
 import './App.css';
 
 function App() {
+	const clickHandler = () => console.log('Add');
+
 	return (
 		<div className="App">
 			<Header title={'Task Manager'} />
 			<Container>
-				<h1>Texto aqui</h1>
+				<Button text="Add Task" clickEvent={clickHandler} />
 			</Container>
 		</div>
 	);
