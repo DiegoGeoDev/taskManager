@@ -8,6 +8,8 @@
   - App (estilo arquivo externo)
   - index (Render root no html)
 
+- npx create-react-app
+
 - 2 - Header
 
 - Estrutura Básica
@@ -30,9 +32,11 @@
 - Revisão (Estrutura Básica)
 - Eventos (click - criar função no App - console)
 
-- 5 - Tasks
+- 5 - Task
 
 - Revisão (Estrutura Básica)
+- npm i styled-components react-icons
+- https://react-icons.github.io/react-icons/
 - Estilos com Styled Components
 
   - 5.1 - Task
@@ -40,12 +44,12 @@
   - Ícones com React Icons
   - Estilos com Styled Components + Estilo Básico
 
-  - 5.2 Tasks - Task
+  - 5.2 Task - TaskItem
 
-  - import do component Task
-  - Criar mock em App
-    - UseState (O que é ? Como usar ?)
+  - import do component TaskItem
   - Renderização de Task em Tasks com map
+  - Criar mock em App (fazer como props na primeira vez)
+    - UseState (O que é ? Como usar ?)
 
 - 6 - Task
 
@@ -113,7 +117,7 @@ https://www.youtube.com/watch?v=t2ypzz6gJm0&ab_channel=WebDevSimplified
 Forwarding Refs
 
 ```bash
-npm i styled-components
+npm i styled-components react-icons
 npm i react-icons
 npm i uuid
 npm i react-router-dom

@@ -1,0 +1,22 @@
+:root {
+	--task-button: #4842e9;
+	--task-button-hover: tomato;
+}
+.task_button__exclude {
+	color: var(--task-button);
+	font-size: 2em;
+	cursor: pointer;
+	margin-left: 8px;
+	transition: color 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.task_button__exclude:hover {
+	color: var(--task-button-hover);
+}
+
+@media (max-width: 420px) {
+	.task_button__exclude {
+		color: var(--task-button-hover);
+	}
+}
