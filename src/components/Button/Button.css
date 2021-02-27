@@ -1,8 +1,8 @@
 :root {
 	--bg-button: #4842e9;
 	--text-color: #eee;
-	--bg-button-hover: rgb(38, 33, 175);
-	--text-color-hover: #ddd;
+	--bg-button-hover: rgb(17, 182, 94);
+	--text-color-hover: #333;
 }
 
 .button__task {
@@ -11,7 +11,7 @@
 	width: 120px;
 	height: 60px;
 
-	margin-top: 16px;
+	margin: 8px 0 32px 0px;
 	padding: 8px;
 	border-radius: 4px;
 	font-size: 1.2em;
@@ -26,4 +26,14 @@
 .button__task:hover {
 	color: var(--text-color-hover);
 	background-color: var(--bg-button-hover);
+	transition: color 0.1s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+}
+
+@media (max-width: 420px) {
+	.button__task {
+		color: var(--text-color-hover);
+		background-color: var(--bg-button-hover);
+	}
 }
